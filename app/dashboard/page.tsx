@@ -128,6 +128,7 @@ export default function DashboardPage() {
           recentUploads={recentUploads}
           setRecentUploads={setRecentUploads}
           setCurrentDocumentId={setCurrentDocumentId}
+          currentDocumentId={currentDocumentId}
           isLoading={isLoading}
         />
 
@@ -136,7 +137,14 @@ export default function DashboardPage() {
           isLoading={isLoading}
           currentDocumentId={currentDocumentId}
         />
-        <RightPanel />
+        <RightPanel
+          setWorkflowData={setWorkflowData}
+          setIsLoading={setIsLoading}
+          recentUploads={recentUploads}
+          setRecentUploads={setRecentUploads}
+          setCurrentDocumentId={setCurrentDocumentId}
+          isLoading={isLoading}
+        />
       </div>
     </DashboardProvider>
   );
